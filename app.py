@@ -5,17 +5,21 @@ import os
 import json
 import re
 import plotly.express as px
+st.set_page_config(page_title="ניהול כספים", page_icon="💰", layout="centered")
 
 # הגדרת כיוון טקסט מימין לשמאל ועיצוב מותאם למובייל
 st.markdown("""
     <style>
-    #MainMenu {visibility: hidden;}
+        #MainMenu {visibility: hidden;}
         header {visibility: hidden;}
         footer {visibility: hidden;}
         .stAppDeployButton {display: none;}
         [data-testid="stStatusWidget"] {visibility: hidden;}
-    body {direction: RTL; text-align: right;}
-    .stTextInput, .stSelectbox {direction: RTL; text-align: right;}
+        .block-container {
+            padding-bottom: 120px !important;
+        }
+        body {direction: RTL; text-align: right;}
+        .stTextInput, .stSelectbox {direction: RTL; text-align: right;}
     </style>
 """, unsafe_allow_html=True)
 
