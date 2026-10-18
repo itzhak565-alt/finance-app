@@ -9,6 +9,11 @@ import plotly.express as px
 # הגדרת כיוון טקסט מימין לשמאל ועיצוב מותאם למובייל
 st.markdown("""
     <style>
+    #MainMenu {visibility: hidden;}
+        header {visibility: hidden;}
+        footer {visibility: hidden;}
+        .stAppDeployButton {display: none;}
+        [data-testid="stStatusWidget"] {visibility: hidden;}
     body {direction: RTL; text-align: right;}
     .stTextInput, .stSelectbox {direction: RTL; text-align: right;}
     </style>
